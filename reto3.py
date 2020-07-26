@@ -7,4 +7,8 @@ import math
 number = int(
     input('Ingresa un número mayor a 20 para calcular su raíz cuadrada: '))
 sRoot = math.sqrt(number)
-print('Este es el resultado: %.2f' % sRoot)
+
+if number < 20:
+    print('\nPor favor ingresa un número mayor a 20')
+else:
+    print('\nEste es el resultado: %.2f' % sRoot)
